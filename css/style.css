@@ -1,0 +1,284 @@
+@font-face {
+    font-family: archivo;
+    src: url(../fonts/ArchivoBlack-Regular.ttf);
+  }
+  a {
+    color: black;
+    text-decoration: none;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    flex-direction: row;
+    padding:5px 80px;
+    background-color: rgb(245, 159, 10);
+    border-bottom: 2px solid white;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+h1{
+    font-family: archivo;
+    font-size: 40px;
+}
+.menu-links{
+    list-style-type: none;
+    display: flex;
+    align-self: center;
+}
+.menu-item{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 0 30px;
+}
+.logo{
+    height: fit-content;
+    width: fit-content;
+}
+.home-banner, .recipe-banner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 550px;
+    width: 100%;
+}
+.home-banner{
+    background-image: url(../images/hero-image.jpg);
+}
+.recipe-banner{
+    background-image: url(../images/lucky.jpg);
+    background-position: bottom;
+}
+.label{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    width: 110%;
+    height: 50%;
+    margin-bottom: 100px;
+    font-size: 30px;
+    text-transform: uppercase;
+    font-family: archivo;
+}
+.section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 50px 150px;
+   
+}
+.section-text{
+    font-size: 28px;
+}
+
+.category-images, .wr-images, .wte-images{
+    display: flex;
+}
+
+/* <---------- Grid for Everyday Categories page BEGIN ----------> */
+.grid-container1{
+    display: grid;
+    grid-template-areas: 
+    'pic pic pic'
+    'label label label';
+    grid-auto-rows: auto;;
+    grid-template-columns: 385px 385px 385px;
+
+}
+.grid-item1{
+    background-image: url(../images/breakfast-ideas.jpg);
+    background-size: cover;
+    background-position: bottom;
+    margin:0 15px 0px 15px;
+    position: relative;
+}
+.grid-item2{
+    background-image: url(../images/vegetarian-ideas.jpg);
+    background-size: cover;
+    background-position: center;
+    margin:0px 15px 0px 15px;
+    position: relative;
+}
+.grid-item3{
+    background-image: url(../images/cold-weather-dinners.jpeg);
+    background-size: cover;
+    background-position: center;
+    margin:0px 15px 0px 15px;
+    position: relative;
+}
+/* <---------- Grid for Everyday Categories page END ----------> */
+.item-label{
+    background-color: white;
+    position: relative;
+    margin: 200px 0px 0px 0px;
+    bottom: -30px;
+    text-align: center;   
+    font-family: Verdana, Geneva, Tahoma, sans-serif; 
+}
+.weekly-recipes{
+    background-color: rgb(211, 218, 228);
+    padding: 50px 110px 100px 110px;
+    margin: 100px 40px;
+}
+
+.grid-container2{
+    display: grid;
+    background-color: rgb(211, 218, 228);
+    grid-template-areas: 
+    'pic pic pic pic'
+    'label label label label';
+    grid-auto-rows: auto;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.grid-item2-1{
+    background-image: url(../images/fajita-peppers.jpeg);
+    background-size: cover;
+    background-position: center;
+    margin:0px 15px 0px 0px;
+    position: relative;
+}
+.grid-item2-2{
+    background-image: url(../images/muffins.jpeg);
+    background-size: cover;
+    background-position: center;
+    margin:0px 15px 0px 15px;
+    position: relative;
+}
+.grid-item2-3{
+    background-image: url(../images/eggplant-parmesan.jpg);
+    background-size: contain;
+    background-position: center;
+    margin:0px 15px 0px 15px;
+    position: relative;
+}
+.grid-item2-4{
+    background-image: url(../images/teriyaki-chicken.jpeg);
+    background-size: cover;
+    background-position: center;
+    margin:0px 15px 0px 15px;
+    position: relative;
+}
+.item-label-wr{
+    background-color: white;
+    position: relative;
+    margin: 200px 0px 0px 0px;
+    padding: 10px 0;
+    bottom: -30px;
+    text-align: center;   
+    font-family: Verdana, Geneva, Tahoma, sans-serif; 
+}
+.grid-container3{
+    display: grid;
+    grid-template-areas: 
+    'pic pic pic'
+    'label label label';
+    grid-auto-rows: auto;
+    grid-template-columns: 385px 385px 385px;
+}
+.grid-item3-1{
+    background-image: url(../images/burger.jpg);
+    background-size: cover;
+    background-position: center;
+    margin:0 15px 0px 15px;
+    position: relative;
+}
+.grid-item3-2{
+    background-image: url(../images/pizza.jpeg);
+    background-size: cover;
+    background-position: center;
+    margin:0px 15px 0px 15px;
+    position: relative;
+}
+.grid-item3-3{
+    background-image: url(../images/bengal-burger.jpg);
+    background-size: cover;
+    background-position: center;
+    margin:0px 15px 0px 15px;
+    position: relative;
+}
+footer{
+    background-color: rgb(245, 159, 10);
+    padding: 50px 80px;
+}
+.footer{
+    display: flex;
+    justify-content: space-between;
+}
+.copyright{
+    align-self: flex-end;
+}
+.footer-links{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: flex;
+}
+.f-link{
+    margin: 0 25px;
+}
+/* <------------ Recipe Page styling START ----------> */
+/* <---------- Banner and Header styling for Recipes page START ----------> */
+.recipe-header{
+    display: grid;
+    grid-template-areas:
+    'label label label'
+    'item1 item2 item3'
+    'item4 item5';
+    grid-auto-rows: 100px 50px 50px;
+    grid-template-columns: 350px 350px 350px;
+    background-color: rgb(211, 218, 228);
+    padding: 0 225px;
+    margin: 0;
+}
+.bold{
+    font-weight: bold;
+}
+.rh-item1{
+    grid-column: 1 / -1 ;
+}
+/* <---------- Banner and Header styling for Recipes page END ----------> */
+/* <---------- MAIN Styling for Recipe Page START ----------> */
+.recipe-page{
+    display: flex;
+    margin: 25px 75px 0 75px;
+    align-items: center;
+    flex-direction: column;
+
+}
+.fake-ui{
+    height: 150px;
+    width: 350px;
+    background-image: url(../images/fakeUI.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.recipe-description{
+    background-color: rgb(211, 218, 228);
+    font-family: archivo;
+    padding: 25px 100px;
+    font-size: 20px;
+    color: rgba(58, 58, 58, 0.756);
+}
+.recipe-instructions{
+    display: grid;
+    grid-template-areas: 
+    'col1 col2';
+    grid-auto-rows: auto;
+    grid-template-columns: auto;
+    align-items: start;
+}
+.spice-mix{
+    list-style: none;
+    font-weight: bold;
+}
+.space{
+    margin: 25px 0;
+}
+.directions, .ingredients{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+/* <---------- MAIN Styling for Recipe Page END ----------> */
+/* <------------ Recipe Page styling END ----------> */
